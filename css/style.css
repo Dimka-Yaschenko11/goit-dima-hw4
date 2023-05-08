@@ -83,6 +83,10 @@ body {
   color: #2196f3;
 }
 
+.nav-link:hover {
+  color: #2196f3;
+}
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -105,9 +109,15 @@ body {
   color: #757575;
 }
 
+.header-mail:hover,
+.header-tel:hover {
+  color: #2196f3;
+}
 .hero {
   background-color: #2f303a;
+  background-image: url(../images/Business.png);
   height: 600px;
+  margin-bottom: 90px;
 }
 
 .hero-title {
@@ -119,6 +129,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   padding-top: 200px;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -138,16 +149,32 @@ body {
   background: #2196f3;
 }
 
+.advantages {
+  margin-bottom: 90px;
+}
+
 .advantages-list {
   display: flex;
   padding: 0;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .advantages-item {
   width: 270px;
+}
+.advantages-item:not(:last-child()) {
   margin-right: 30px;
-  padding-top: 94px;
+}
+
+.advantages-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  /* display: block; */
+  margin: 0 auto;
+  padding: 25px;
+  margin-bottom: 30px;
 }
 
 .advantages-subtitle {
@@ -183,6 +210,20 @@ body {
   margin-bottom: 50px;
 }
 
+.ourteam {
+  margin-bottom: 90px;
+}
+
+.ourteam-item {
+  width: calc((100%-90px) / 4);
+ margin-right: 30px;
+ margin-bottom: 30px;
+ background-color: #ffffff;
+ box-shadow: 0px 1px 3px rgba(0,0,0,0.12),
+             0px 1px 1px rgba(0,0,0,0.14),
+             0px 2px 1px rgba(0,0,0,0.2);
+border-radius: 0px 0px 4px 4px;
+} 
 .ourteam-title {
   margin-bottom: 10px;
   text-align: center;
@@ -228,6 +269,10 @@ body {
 
 /* Постійні клієнти */
 
+.clients-section {
+  margin-bottom: 90px;
+}
+
 .clients-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -260,10 +305,8 @@ body {
 .clients-icon {
   height: 92px;
   width: 170px;
-  fill:currentColor;
+  fill: currentColor;
 }
-
-
 
 .footer {
   background-color: #2f303a;
@@ -272,10 +315,10 @@ body {
 }
 
 .footer-nav {
-  display: flex
+  display: flex;
 }
 
-.footer-logo {
+.logo-footer {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -285,10 +328,11 @@ body {
   color: #ffffff;
   display: block;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
-.logo-footer-blue { 
-color: #2196f3
+.logo-footer-blue {
+  color: #2196f3;
 }
 
 .footer-contacts {
@@ -296,11 +340,31 @@ color: #2196f3
 }
 
 .footer-social-list {
-list-style: none;
+  display: flex;
+  list-style: none;
+}
+
+.footer-social-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-web {
   color: #2196f3;
+}
+
+.footer-icon {
+  width: 44px;
+  padding: 12px;
+  fill: currentColor;
 }
 
 .footer-adress {
@@ -320,21 +384,22 @@ list-style: none;
 }
 
 .footer-adres-item {
-margin-bottom: 9px;
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
-color: #ffffff;
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  list-style: none;
 }
 
 .footer-adres-item:last-child {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer-contact-item {
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
-color:  rgba(255,255, 255, 0.6);
-list-style: none;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  list-style: none;
 }
