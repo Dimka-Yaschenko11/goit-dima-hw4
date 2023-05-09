@@ -330,7 +330,8 @@ body {
 /* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
 
 .clients-section {
-  padding: 0px 94px;
+ padding-top: 94px;
+ padding-bottom: 94px;
 }
 
 .clients-title {
