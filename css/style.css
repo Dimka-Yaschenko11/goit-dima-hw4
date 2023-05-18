@@ -70,6 +70,7 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+  margin-bottom: 94px;
 }
 
 .header-nav {
@@ -508,14 +509,28 @@ body {
 }
 
 .nav-list {
-  text-align: center;
+ justify-content: center;
   list-style: none;
   display: flex;
 }
 
-.nav-list {
+.nav-item-menu {
+margin-right: 8px;
+background: #F5F4FA;
+border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+padding: 6px 22px;
 }
 
+.nav-item-menu:hover{
+  background-color: #2196f3;
+  color: #FFFFFF;
+}
 .gallery-title {
   font-family: 'Roboto';
   font-style: normal;
@@ -533,4 +548,12 @@ body {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.menu-gallery {
+margin-bottom: 50px;
+}
+
+.gallery {
+margin-bottom: 94px;
 }
