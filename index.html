@@ -15,7 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
-
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -116,13 +119,16 @@
           <ul class="whatdowedo-list list">
             <li class="whatdowedo-item">
               <img src="./images/box1.jpg" width="370" alt="box1" />
+              <p class="whatdowedo-text">Десктопні додатки</p>
             </li>
 
             <li class="whatdowedo-item">
               <img src="./images/box2.jpg" width="370" alt="box2" />
+              <p class="whatdowedo-text">Мобільні додатки</p>
             </li>
             <li class="whatdowedo-item">
               <img src="./images/box3.jpg" width="370" alt="box3" />
+              <p class="whatdowedo-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </section>
@@ -373,6 +379,8 @@
             </ul>
           </address>
         </div>
+
+        <!-- Кнопки соц.мережі футера -->
         <div class="footer-social">
           <h2 class="footer-social-title">приєднуйтесь</h2>
 
@@ -408,6 +416,18 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <!-- Підписка на розсилку -->
+        <div class="subscript">
+          <h3 class="subscript-title">Підпишіться на розсилку</h3>
+          <input type="email" class="subscript-form" name="email" placeholder="E-mail" />
+          <button type="submit" class="subscript-btn">
+            Підписатися
+            <svg width="24" height="24" class="subscript-icon">
+              <use href="./icon.svg#icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
